@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web Page</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <p>จำนวนผู้เข้าชมเว็บไซต์: {{ visitor_count }}</p>
+
+    <div class="container">
+        <header>
+            <h1>Welcome to My Personal Web Page</h1>
+        </header>
+        <section class="profile">
+            <img src="https://f.ptcdn.info/774/048/000/ok6xjijtn8y1Rkk7wNs-o.jpg" alt="Profile Picture" class="profile-picture">
+            <h2>About Me</h2>
+            <p>Hi My name is Irfan Tochu. </p>
+        </section>
+        
+        <section class="projects">
+            <h2>My Projects</h2>
+            <p>Here are some projects I have worked on:</p>
+            <ul>
+                <li><a href="#">Project 1</a>: A website Health Talk site</li>
+                <li><a href="#">Project 2</a>: A Real-Time Object-Detection.</li>
+                <li><a href="#">Project 3</a>: A Game Unity 2D.</li>
+            </ul>
+        </section>
+        <section class="sports">
+            <h2>Favorite Sports</h2>
+            <p>In my free time, I enjoy playing and watching these sports:</p>
+            <ul>
+                <li>Soccer</li>
+                <li>Sepaktakro</li>
+                <li>Badminton</li>
+            </ul>
+        </section>
+
+        <footer>
+            <p>Thank you for visiting my personal web page🙌🔊</p>
+        </footer>
+    </div>
+    <script>
+        document.cookie = "django_language=" + navigator.language + ";path=/";
+    </script>
+</body>
+</html>
